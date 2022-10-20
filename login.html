@@ -1,0 +1,48 @@
+<!--
+login.html
+Imbound
+
+Created by Kaleb Rosborough on 10 / 17 / 2022
+Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imbound</title>
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Imbound</h1>
+    </header>
+
+    <main>
+        <h2>Log In</h2>
+        <form id="login_form" name="login_form" action="homepage.html" method="get">
+            <div>
+                <input type="text" id="user" name="user" placeholder="Email or Username">
+                <span id="user_error">*</span>
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span id="password_error">*</span>
+            </div>
+            <div>
+                <input type="submit" id="login" value="Log In">
+            </div>
+        </form>
+        <div>
+            <p id="signup">Don't have an account yet? <a href="signup.html">Sign up</a></p>
+        </div>
+    </main>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
