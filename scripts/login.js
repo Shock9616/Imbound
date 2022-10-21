@@ -9,6 +9,7 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 "use strict";
 
 $(document).ready(() => {
+    $("#user").focus();
 
     // Handle click on log in button
     $("#login").click(evt => {

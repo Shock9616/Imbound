@@ -19,28 +19,29 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 </head>
 
 <body>
-    <header>
+    <div class="title">
         <h1>Imbound</h1>
-    </header>
-
+    </div>
     <main>
-        <h2>Log In</h2>
-        <form id="login_form" name="login_form" action="homepage.html" method="get">
+        <fieldset class="login_fields">
+            <!-- <h2>Log In</h2> -->
+            <form id="login_form" name="login_form" action="homepage.html" method="get">
+                <div>
+                    <input type="text" id="user" name="user" placeholder="Email or Username">
+                    <span id="user_error"></span>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <span id="password_error"></span>
+                </div>
+                <div>
+                    <input type="submit" id="login" value="Log In">
+                </div>
+            </form>
             <div>
-                <input type="text" id="user" name="user" placeholder="Email or Username">
-                <span id="user_error">*</span>
+                <p id="signup">Don't have an account yet? <a href="signup.html">Sign up</a></p>
             </div>
-            <div>
-                <input type="password" id="password" name="password" placeholder="Password">
-                <span id="password_error">*</span>
-            </div>
-            <div>
-                <input type="submit" id="login" value="Log In">
-            </div>
-        </form>
-        <div>
-            <p id="signup">Don't have an account yet? <a href="signup.html">Sign up</a></p>
-        </div>
+        </fieldset>
     </main>
     <script src="scripts/login.js"></script>
 </body>

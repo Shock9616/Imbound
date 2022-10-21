@@ -19,35 +19,36 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 </head>
 
 <body>
-    <header>
+    <div class="title">
         <h1>Imbound</h1>
-    </header>
+    </div>
 
     <main>
-        <h2>Sign Up</h2>
-        <form id="signup_form" name="signup_form" action="homepage.html" method="get">
+        <fieldset class="login_fields">
+            <!-- <legend><h2>Sign Up</h2></legend> -->
+            <form id="signup_form" name="signup_form" action="homepage.html" method="get">
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <span id="email_error"></span>
+                </div>
+                <div>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <span id="username_error"></span>
+                </div>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span id="password_error"></span>
+                <div>
+                    <input type="password" id="password_ver" name="password_ver" placeholder="Verify password">
+                    <span id="password_ver_error"></span>
+                </div>
+                <div>
+                    <input type="submit" id="signup" value="Sign Up">
+                </div>
+            </form>
             <div>
-                <input type="email" id="email" name="email" placeholder="Email">
-                <span id="email_error">*</span>
+                <p id="login">Already have an account? <a href="login.html">Log in</a></p>
             </div>
-            <div>
-                <input type="text" id="username" name="username" placeholder="Username">
-                <span id="username_error">*</span>
-            </div>
-            <input type="password" id="password" name="password" placeholder="Password">
-            <span id="password_error">*</span>
-            </div>
-            <div>
-                <input type="password" id="password_ver" name="password_ver" placeholder="Verify password">
-                <span id="password_ver_error">*</span>
-            </div>
-            <div>
-                <input type="submit" id="signup" value="Sign Up">
-            </div>
-        </form>
-        <div>
-            <p id="login">Already have an account? <a href="login.html">Log in</a></p>
-        </div>
+        </fieldset>
     </main>
     <script src="scripts/signup.js"></script>
 </body>
