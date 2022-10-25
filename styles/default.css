@@ -15,33 +15,92 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
     margin: 0 auto;
-    width: 600px;
-    border: 3px solid black;
     padding: 0 2em 1em;
 }
 
-h1 {
-    color: blue;
+header {
+    padding: 0px 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 8px #ddddddaa;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
 }
 
-div {
-    margin-bottom: 1em;
+main {
+    /* align-content: center; */
+    margin-top: 20px
 }
 
-label {
+#img_gallery {
+    margin: 0 auto;
+}
+
+.grid_item,
+.grid_item img {
+    width: 380px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.grid_item {
+    margin: 9px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #BFBFBF;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    color: #3b35ca;
+    font-size: 30px;
     display: inline-block;
-    width: 11em;
-    text-align: right;
 }
 
-input {
-    margin-left: 1em;
-    margin-right: 0.5em;
+header input[type=text] {
+    padding: 10px 23px;
+    box-sizing: border-box;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    flex: 1;
+    height: 50px;
+    margin-top: 14px;
 }
 
-span {
-    color: red;
+header input[type=button] {
+    background-color: #4cd085;
+    border: solid 5px #4cd085;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0px 2%;
+    margin-top: 14px;
+    width: 7%;
+    height: 50px;
+    min-width: 120px;
+}
+
+header input[type=button]:hover {
+    background-color: #3bc974;
+    border: solid 5px #3bc974;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+header input[type=button]:active {
+    background-color: #3bc974;
+    border: solid 4px #3bc974;
+    color: white;
+    transition-duration: 0.02s;
 }

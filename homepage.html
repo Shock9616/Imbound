@@ -12,20 +12,84 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#3b35ca">
     <title>Imbound</title>
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Imbound</h1>
+        <input type="button" id="new_img_btn" name="new_img_btn" value="New Image">
+        <input type="text" id="search_txt" name="search_txt" placeholder="Search">
+        <input type="button" id="menu_btn" name="menu_btn" value="Menu">
     </header>
 
     <main>
-        <h2>Homepage</h2>
+        <div id="img_gallery">
+            <div class="grid_item">
+                <img src="images/IMG_0213.jpeg">
+                <p class="img_caption">Grocery cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0215.jpeg">
+                <p class="img_caption">Cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0253.jpeg">
+                <p class="img_caption">Goofy face cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0404.jpeg">
+                <p class="img_caption">Suspicious cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0502.jpeg">
+                <p class="img_caption">Computer cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0720.jpeg">
+                <p class="img_caption">Dignified cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_0799.jpeg">
+                <p class="img_caption">Curious cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_1027.jpeg">
+                <p class="img_caption">Sleeping cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_1030.jpeg">
+                <p class="img_caption">Box cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_1772.jpeg">
+                <p class="img_caption">Baby cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_1788.jpeg">
+                <p class="img_caption">Sleeping baby cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_1933.jpeg">
+                <p class="img_caption">Laundry cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_2612.jpeg">
+                <p class="img_caption">Wall cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_2620.jpeg">
+                <p class="img_caption">Shoe cat</p>
+            </div>
+            <div class="grid_item">
+                <img src="images/IMG_2624.jpeg">
+                <p class="img_caption">Laundry basket cat</p>
+            </div>
+        </div>
     </main>
     <script src="scripts/homepage.js"></script>
 </body>
