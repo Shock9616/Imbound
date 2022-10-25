@@ -15,7 +15,7 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 */
 
 body {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #fbfbfb;
     margin: 0 auto;
     padding: 0 2em 1em;
@@ -44,13 +44,13 @@ main {
 .grid_item,
 .grid_item img {
     width: 380px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     object-fit: cover;
 }
 
 .grid_item {
     margin: 9px;
-    border-radius: 8px;
+    border-radius: 9px;
     object-fit: cover;
     border: 1px solid #BFBFBF;
     background-color: #ffffff;
@@ -58,6 +58,7 @@ main {
 }
 
 header h1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #3b35ca;
     font-size: 30px;
     display: inline-block;
