@@ -15,4 +15,8 @@ $(document).ready( () => {
         columnWidth: 200,
         fitWidth: true
     });
+
+    $(".grid_item").click( () => {
+        console.log($(this).find("img").attr("src"));
+    })
 });
