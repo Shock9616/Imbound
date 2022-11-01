@@ -8,15 +8,16 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 
 "use strict";
 
-$(document).ready( () => {
+$(document).ready(() => {
     $('#img_gallery').masonry({
         // options
-        itemSelector: '.grid_item',
+        itemSelector: ".grid_item",
         columnWidth: 200,
         fitWidth: true
     });
 
-    $(".grid_item").click( () => {
-        console.log($(this).find("img").attr("src"));
+    $(".grid_item").click(function () {
+        localStorage.setItem("clickedImage", $(this).find("img").attr("src"));
+        window.location.href = "detail.html";
     })
 });
