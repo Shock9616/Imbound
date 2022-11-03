@@ -48,9 +48,11 @@ $(document).ready(() => {
             const email_regex = /([-!#-'*+/-9=?A-Z^-~]+(\.[-!#-'*+/-9=?A-Z^-~]+)*|"([]!#-[^-~ \t]|(\\[\t -~]))+")@([0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?(\.[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?)*|\[((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}|IPv6:((((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){6}|::((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){5}|[0-9A-Fa-f]{0,4}::((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){4}|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):)?(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){3}|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){0,2}(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){2}|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){0,3}(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){0,4}(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::)((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3})|(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3})|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){0,5}(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3})|(((0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}):){0,6}(0|[1-9A-Fa-f][0-9A-Fa-f]{0,3}))?::)|(?!IPv6:)[0-9A-Za-z-]*[0-9A-Za-z]:[!-Z^-~]+)])/;
             let email_ver = email_regex.test(email_txt.val().trim());
             if (!email_ver) {
+                // If the entered email is invalid
                 email_txt.next().text("Enter a valid email");
                 isValid = false;
             } else {
+                // Clear the error message if the entered email is valid
                 email_txt.next().text("");
             }
         }
@@ -61,6 +63,7 @@ $(document).ready(() => {
             username_txt.next().text("This field is required");
             isValid = false;
         } else {
+            // Clear the error message if the username field is valid
             username_txt.next().text("");
         }
 
@@ -70,6 +73,7 @@ $(document).ready(() => {
             password_txt.next().text("This field is required");
             isValid = false;
         } else {
+            // Clear the error message if the password field is valid
             password_txt.next().text("");
         }
 
@@ -84,6 +88,7 @@ $(document).ready(() => {
                 password_ver.next().text("Passwords must match");
                 isValid = false;
             } else {
+                // Clear the error message if password verification is valid
                 password_ver.next().text("");
             }
         }
@@ -92,12 +97,5 @@ $(document).ready(() => {
         if (!isValid) {
             evt.preventDefault();
         }
-        // } else {
-        //     // If all entered info is valid, create a new user account
-        //     $.getJSON("data/userdata.json", function (data) {
-
-        //     });
-        //     $.
-        // }
     });
 });

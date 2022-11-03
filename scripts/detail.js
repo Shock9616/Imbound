@@ -9,5 +9,6 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 "use strict";
 
 $(document).ready(() => {
+    // Update the image to show the image that was clicked on
     $("#img_display").attr("src", localStorage.clickedImage);
 });

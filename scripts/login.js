@@ -43,6 +43,7 @@ $(document).ready(() => {
                 user_field.next().text("No account with that username or email");
                 isValid = false;
             } else {
+                // Clear error message if username field is valid
                 user_field.next().text("");
             }
 
@@ -56,6 +57,7 @@ $(document).ready(() => {
                 password_field.next().text("Incorrect password");
                 isValid = false;
             } else {
+                // Clear error message if password field is valid
                 password_field.next().text("");
             }
 
