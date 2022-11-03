@@ -49,6 +49,11 @@ main {
     text-align: center;
 }
 
+.grid_item:hover {
+    filter: brightness(110%);
+    transition-duration: 0.2s;
+}
+
 header h1 {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #3b35ca;

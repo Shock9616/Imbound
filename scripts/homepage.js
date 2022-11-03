@@ -17,7 +17,7 @@ $(document).ready(() => {
     });
 
     $(".grid_item").click(function () {
-        localStorage.setItem("clickedImage", $(this).find("img").attr("src"));
+        localStorage.clickedImage = $(this).find("img").attr("src");
         window.location.href = "detail.html";
-    })
+    });
 });

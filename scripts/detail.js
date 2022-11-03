@@ -9,6 +9,5 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 "use strict";
 
 $(document).ready(() => {
-    console.log("hi" + localStorage.getItem("clickedImage"));
-    $("#img_display").attr("src", localStorage.getItem("clickedImage").toString());
-})
+    $("#img_display").attr("src", localStorage.clickedImage);
+});
