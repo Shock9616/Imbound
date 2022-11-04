@@ -89,7 +89,6 @@ $(document).ready(() => {
                 "password": password_txt.val().trim()
             };
             localStorage.setItem("user_obj", JSON.stringify(user_obj));
-            console.log(JSON.parse(localStorage.getItem("user_obj")));
         }
     });
 });
