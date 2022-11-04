@@ -20,7 +20,7 @@ $(document).ready(() => {
     // When an image is clicked, remember that
     // image and redirect the user to detail.html
     $(".grid_item").click(function () {
-        localStorage.clickedImage = $(this).find("img").attr("src");
+        sessionStorage.clickedImage = $(this).find("img").attr("src");
         window.location.href = "detail.html";
     });
 });

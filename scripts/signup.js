@@ -22,20 +22,6 @@ $(document).ready(() => {
         // Variable to check if all entries are valid
         let isValid = true;
 
-        // Check if entered username or email are already associated with an account
-        $.getJSON("data/userdata.json", function (data) {
-            if (data.find(item => item.email === email_txt) != undefined) {
-                // If there is already an account with the entered email
-                email_txt.next().text("Email already in use")
-                isValid = false;
-            }
-            if (data.find(item => item.username === username_txt) != undefined) {
-                // If there is already an account with the entered username
-                username_txt.next().text("Username already in use")
-                isValid = false;
-            }
-        });
-
         // Check form entries for validity
 
         // Validate email field
@@ -96,6 +82,14 @@ $(document).ready(() => {
         // If any entry is invalid, don't submit the form
         if (!isValid) {
             evt.preventDefault();
+        } else {
+            const user_obj = {
+                "username": username_txt.val().trim(),
+                "email": email_txt.val().trim(),
+                "password": password_txt.val().trim()
+            };
+            localStorage.setItem("user_obj", JSON.stringify(user_obj));
+            console.log(JSON.parse(localStorage.getItem("user_obj")));
         }
     });
 });
