@@ -23,7 +23,14 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
         <h1>Imbound</h1>
         <input type="button" id="new_img_btn" name="new_img_btn" value="New Image">
         <input type="text" id="search_txt" name="search_txt" placeholder="Search">
-        <input type="button" id="menu_btn" name="menu_btn" value="Menu">
+        <div class="menu_dropdown">
+            <input type="button" id="menu_btn" name="menu_btn" value="Menu">
+            <div class="menu_dropdown_content">
+                <a href="homepage.html">Home</a>
+                <a href="detail.html">Detail</a>
+                <a href="login.html">Sign Out</a>
+            </div>
+        </div>
     </header>
     <h1 id="img_title">Title</h1>
     <main>
@@ -47,11 +54,14 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
                 <li>#tag3</li>
             </ul>
             <h3>Comments</h3>
+            <div>
+                <textarea name="comment" id="comment"></textarea>
+                <input type="submit" id="add_comment" value="Comment">
+                <input type="submit" id="clear_comment" value="Clear Comments">
+                <span id="char_count">125/125</span>
+                <span id="comment_error"></span>
+            </div>
             <ul id="comments">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Maecenas gravida lorem ut massa tincidunt, non varius nisi
-                    mattis. Pellentesque ultricies massa nec lacus interdum
-                    dictum.</li>
             </ul>
         </div>
     </main>

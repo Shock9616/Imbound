@@ -49,11 +49,6 @@ main {
     text-align: center;
 }
 
-.grid_item:hover {
-    filter: brightness(110%);
-    transition-duration: 0.2s;
-}
-
 header h1 {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #3b35ca;
@@ -102,3 +97,43 @@ header input[type=button]:active {
     color: white;
     transition-duration: 0.02s;
 }
+
+/* Positioning menu_dropdown content */
+.menu_dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px 2.1%;
+}
+
+/* Dropdown Menu CSS (hidden when not hover) */
+.menu_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #3ed079;
+    border-radius: 8px;
+    margin-top: 2px;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 4px;
+}
+
+/* Dropdown links CSS */
+.menu_dropdown_content a {
+    color: white;
+    padding: 10px 24px 10px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu_dropdown_content a:hover {
+    background-color: #39a566;
+    border-radius: 8px;
+}
+
+/* Color of dropdown_content links on hover */
+.menu_dropdown:hover .menu_dropdown_content {
+    display: block;
+}
+
+/* Shows the dropdown menu on hover of menu_btn */
