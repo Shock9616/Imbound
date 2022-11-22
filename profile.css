@@ -1,0 +1,87 @@
+/* Created by Max F. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    padding: 0 2em 1em;
+}
+
+header {
+    padding: 0px 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 8px #ddddddaa;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+}
+
+main {
+    /* align-content: center; */
+    margin-top: 20px;
+    display: flex;
+}
+
+header h1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #3b35ca;
+    font-size: 30px;
+    display: inline-block;
+}
+
+header input[type=text] {
+    padding: 10px 23px;
+    box-sizing: border-box;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    flex: 1;
+    height: 50px;
+    margin-top: 14px;
+}
+
+header input[type=button] {
+    background-color: #4cd085;
+    border: solid 5px #4cd085;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0px 2%;
+    margin-top: 14px;
+    width: 7%;
+    height: 50px;
+    min-width: 120px;
+}
+
+header input[type=button]:hover {
+    background-color: #3bc974;
+    border: solid 5px #3bc974;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+header input[type=button]:active {
+    background-color: #3bc974;
+    border: solid 4px #3bc974;
+    color: white;
+    transition-duration: 0.02s;
+}
+
+#title {
+    text-align: center;
+}
+
+img {
+    width: auto;
+    margin: 0px 0px 20px 5px;
+}
+
+#slideshow {
+    width: 400px;
+    margin: 0 auto;
+}
