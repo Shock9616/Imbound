@@ -233,14 +233,17 @@ header input[type=button]:active {
     display: block;
 }
 
+/* Color of dropdown_content links on hover */
 .menu_dropdown_content a:hover {
     background-color: #39a566;
     border-radius: 8px;
 }
 
-/* Color of dropdown_content links on hover */
+/* Shows the dropdown menu on hover of menu_btn */
 .menu_dropdown:hover .menu_dropdown_content {
     display: block;
 }
 
-/* Shows the dropdown menu on hover of menu_btn */
+.current_page {
+    pointer-events: none;
+}
