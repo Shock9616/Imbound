@@ -101,7 +101,8 @@ header input[type=button]:active {
 }
 
 #tags {
-    margin: 30px -45px;
+    display: inline;
+    /* margin: 30px -45px; */
 }
 
 #tags li {
@@ -137,8 +138,8 @@ header input[type=button]:active {
     max-height: 250px;
 }
 
-/* Add Comment Button */
-#add_comment {
+/* Add Comment Button/Share Button */
+#add_comment, #share_btn {
     background-color: #4cd085;
     border: solid 5px #4cd085;
     color: white;
@@ -153,14 +154,14 @@ header input[type=button]:active {
     min-width: 110px;
 }
 
-#add_comment:active {
+#add_comment:active, #share_btn:active {
     background-color: #3bc974;
     border: solid 4px #3bc974;
     color: white;
     transition-duration: 0.02s;
 }
 
-#add_comment:hover {
+#add_comment:hover, #share_btn:hover {
     background-color: #3bc974;
     border: solid 4px #3bc974;
     color: white;
@@ -197,7 +198,7 @@ header input[type=button]:active {
 }
 
 /* Comment Button Error Text */
-#comment_error {
+#comment_error, #share_error {
     color: red;
     position: 10px;
     float: right;
