@@ -1,0 +1,67 @@
+<!-- Created by Max F. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imbound</title>
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"> 
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Imbound</h1>
+        <input type="button" id="new_img_btn" name="new_img_btn" value="New Image">
+        <input type="text" id="search_txt" name="search_txt" placeholder="Search">
+        <div class="menu_dropdown">
+            <input type="button" id="menu_btn" name="menu_btn" value="Menu">
+            <div class="menu_dropdown_content">
+                <a href="homepage.html">Home</a>
+                <a href="detail.html">Detail</a>
+                <a class="current_page" href="profile.html">Profile</a>
+                <a href="login.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+    <h1 id="title">About Imbound</h1>
+    <main>
+        <div id="accordion">
+            <h3>What is Imbound?</h3>
+           <div>
+               <p>Imbound is an image hosting website where you can upload, browse, 
+                and download pictures.
+               </p>
+           </div>
+           <h3>Why use Imbound?</h3>
+           <div>
+               <p>Three reasons:</p>
+               <ul>
+                   <li>Imbound is free.</li>
+                   <li>Imbound allows you to browse memes, beautiful art, 4K pictures, and more.</li>
+                   <li>No ads!</li>
+               </ul>
+           </div>
+           <h3>How do you sign up?</h3>
+           <div>
+               <p>To sign up for imbound, hover over the menu button
+                <a href="signup.html">or click here.</a>
+               </p>
+           </div>
+       </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>    
+    <script>
+        $(document).ready( () => 
+            $("#accordion").accordion({ 
+                event: "click",
+                heightStyle: "content",
+                collapsible: true,
+                active: false
+            })
+        )
+    </script>  
+    </body>
+</html>
