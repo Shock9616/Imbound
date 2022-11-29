@@ -8,10 +8,39 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
 
 "use strict";
 
+// Pair locally stored images with their respective imgur links
+const imageLinks = {
+    "images/IMG_0213.jpeg": "https://i.imgur.com/A6Fsocw.jpg", // Grocery cat
+    "images/IMG_2612.jpeg": "https://i.imgur.com/9ULkMWZ.jpg", // Wall cat
+    "images/IMG_0215.jpeg": "https://i.imgur.com/BUTidYg.jpg", // Cat
+    "images/IMG_0253.jpeg": "https://i.imgur.com/ZPxjRo5.jpg", // Goofy face cat
+    "images/IMG_0404.jpeg": "https://i.imgur.com/8ceqQGd.jpg", // Suspicious cat
+    "images/IMG_0502.jpeg": "https://i.imgur.com/eotJRhC.jpg", // Computer cat
+    "images/IMG_0720.jpeg": "https://i.imgur.com/Ck7AsnA.jpg", // Dignified cat
+    "images/IMG_0799.jpeg": "https://i.imgur.com/QY3LLM3.jpg", // Curious cat
+    "images/IMG_1027.jpeg": "https://i.imgur.com/zAjczBS.jpg", // Sleeping cat
+    "images/IMG_1030.jpeg": "https://i.imgur.com/zu9J7gF.jpg", // Box cat
+    "images/IMG_1772.jpeg": "https://i.imgur.com/T57U6lB.jpg", // Baby cat
+    "images/IMG_1788.jpeg": "https://i.imgur.com/CsV0apQ.jpg", // Sleeping baby cat
+    "images/IMG_1933.jpeg": "https://i.imgur.com/LrRqA60.jpg", // Laundry cat
+    "images/IMG_2620.jpeg": "https://i.imgur.com/da5XIE7.jpg", // Shoe cat
+    "images/IMG_2624.jpeg": "https://i.imgur.com/qwJMfyo.jpg" // Laundry basket cat
+}
+
 $(document).ready(() => {
     // Update the image to show the image that was clicked on
     $("#img_display").attr("src", sessionStorage.clickedImage);
+
+    var sharers = $(".sharer").map(function() {
+        return this;
+    }).get();
+
+    for (let sharer in sharers) {
+        $(sharers[sharer]).attr("data-url", imageLinks[sessionStorage.clickedImage]);
+    }
+
     $("#comment").focus();
+
 
     // NA Handle click on comment button
     $("#add_comment").click(() => {
@@ -94,4 +123,9 @@ $(document).ready(() => {
     };
 
     listToComment();
+
+    // Get imgur url for image when share button clicked
+    $(".sharer").click(function() {
+        $(this).attr("data-url", imageLinks[sessionStorage.clickedImage]);
+    });
 });
