@@ -124,7 +124,7 @@ $(document).ready(() => {
 
     listToComment();
 
-    // Get imgur url for image when share button clicked
+    // Get imgur url for current image when the share button is clicked
     $(".sharer").click(function() {
         $(this).attr("data-url", imageLinks[sessionStorage.clickedImage]);
     });

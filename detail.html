@@ -14,9 +14,10 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imbound</title>
     <link rel="stylesheet" type="text/css" href="styles/detail.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- sharer.js adds share button functionality for sharing to sites like facebook, twitter, reddit, etc.
+         Font Awesome adds the social media icons used for the share buttons -->
     <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
     <script src="https://kit.fontawesome.com/96bc82d2ed.js" crossorigin="anonymous"></script>
 </head>
@@ -52,21 +53,27 @@ Part of a group project by Max F, Max Z, Kaleb R, Norman A, Dylan A
                 lectus. Curabitur
                 sapien tortor, vestibulum vel libero sit amet, volutpat efficitur turpis. Mauris consectetur interdum.
             </p>
+            <!-- Create the share sheet -->
             <div class="share_popup">
                 <input type="button" name="share_btn" id="share_btn" value="Share"><span></span>
                 <div class="share_popup_content">
+                    <!-- Facebook share button -->
                     <button class="sharer" id="fb_share" data-sharer="facebook" data-url="https://google.com">
                             <i class="fa-brands fa-square-facebook"></i> Share on Facebook
                     </button>
+                    <!-- Twitter share button -->
                     <button class="sharer" id="tw_share" data-sharer="twitter" data-url="https://google.com">
                         <i class="fa-brands fa-square-twitter"></i> Share on Twitter
                     </button>
+                    <!-- Whatsapp share button -->
                     <button class="sharer" id="wa_share" data-sharer="whatsapp" data-url="https://google.com">
                         <i class="fa-brands fa-square-whatsapp"></i> Share on Whatsapp
                     </button>
+                    <!-- Reddit share button -->
                     <button class="sharer" id="rd_share" data-sharer="reddit" data-url="https://google.com">
                         <i class="fa-brands fa-square-reddit"></i> Share on Reddit
                     </button>
+                    <!-- Email share button -->
                     <button class="sharer" id="email_share" data-sharer="email" data-url="https://google.com">
                         <i class="fa-solid fa-envelope"></i> Share to Email
                     </button>
