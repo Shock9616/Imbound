@@ -1,0 +1,171 @@
+/* Created by Max F. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
+    margin: 0 auto;
+    padding: 0 2em 1em;
+}
+
+header {
+    padding: 0px 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 8px #ddddddaa;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+}
+
+main {
+    /* align-content: center; */
+    margin-top: 20px;
+    display: flex;
+}
+
+header h1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #3b35ca;
+    font-size: 30px;
+    display: inline-block;
+}
+
+header input[type=text] {
+    padding: 10px 23px;
+    box-sizing: border-box;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    flex: 1;
+    height: 50px;
+    margin-top: 14px;
+}
+
+header input[type=button] {
+    background-color: #4cd085;
+    border: solid 5px #4cd085;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0px 2%;
+    margin-top: 14px;
+    width: 7%;
+    height: 50px;
+    min-width: 120px;
+}
+
+header input[type=button]:hover {
+    background-color: #3bc974;
+    border: solid 5px #3bc974;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+header input[type=button]:active {
+    background-color: #3bc974;
+    border: solid 4px #3bc974;
+    color: white;
+    transition-duration: 0.02s;
+}
+
+img {
+    width: auto;
+    margin: 0px 0px 20px 5px;
+}
+
+@media (min-width:1600px){
+    #title {
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        right: 900px;
+    }
+}
+@media (max-width:1600px){
+    #title {
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        right: 400px;
+    }
+}
+
+@media (max-width:1000px){
+    #title {
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        right: 200px;
+    }
+}
+
+#profInfo {
+    position: relative;
+    width: 300px;
+    margin-top: 85px;
+    margin-right: 100px;
+}
+
+
+@media (max-width:1600px){
+    #slideshow {
+        width: 270px;
+        position: relative;
+        margin: 50px 200px 0px 200px;
+    }
+}
+
+@media (min-width:1600px){
+    #slideshow {
+        width: 400px;
+        position: relative;
+        margin: 50px 180px 0px 420px;
+    }
+}
+
+/* Positioning menu_dropdown content */
+.menu_dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px 2.1%;
+}
+
+/* Dropdown Menu CSS (hidden when not hover) */
+.menu_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #3ed079;
+    border-radius: 8px;
+    margin-top: 2px;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 4px;
+}
+
+/* Dropdown links CSS */
+.menu_dropdown_content a {
+    color: white;
+    padding: 10px 24px 10px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Color of dropdown_content links on hover */
+.menu_dropdown_content a:hover {
+    background-color: #39a566;
+    border-radius: 8px;
+}
+
+/* Shows the dropdown menu on hover of menu_btn */
+.menu_dropdown:hover .menu_dropdown_content {
+    display: block;
+}
+
+.current_page {
+    pointer-events: none;
+}
