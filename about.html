@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imbound</title>
     <link rel="stylesheet" type="text/css" href="styles/about.css">
-    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"> 
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
@@ -20,7 +20,8 @@
             <div class="menu_dropdown_content">
                 <a href="homepage.html">Home</a>
                 <a href="detail.html">Detail</a>
-                <a class="current_page" href="profile.html">Profile</a>
+                <a href="profile.html">Profile</a>
+                <a class="current_page" href="about.html">About</a>
                 <a href="login.html">Sign Out</a>
             </div>
         </div>
@@ -30,7 +31,7 @@
         <div id="accordion">
             <h3>What is Imbound?</h3>
            <div>
-               <p>Imbound is an image hosting website where you can upload, browse, 
+               <p>Imbound is an image hosting website where you can upload, browse,
                 and download pictures.
                </p>
            </div>
@@ -52,16 +53,16 @@
        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>    
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script>
-        $(document).ready( () => 
-            $("#accordion").accordion({ 
+        $(document).ready( () =>
+            $("#accordion").accordion({
                 event: "click",
                 heightStyle: "content",
                 collapsible: true,
                 active: false
             })
         )
-    </script>  
+    </script>
     </body>
 </html>
