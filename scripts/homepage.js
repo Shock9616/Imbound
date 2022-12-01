@@ -20,7 +20,7 @@ $(document).ready(() => {
 // Arrange the images in a gallery that fills
     // empty space between differently sized images
 $('#img_gallery').masonry({
-        itemSelector: ".grid_item",
-        columnWidth: 200,
-        fitWidth: true
-    });
+    itemSelector: ".grid_item",
+    columnWidth: 200,
+    fitWidth: true
+});
